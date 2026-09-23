@@ -24,7 +24,7 @@ AMPUL_MODELLERI = [
 ]
 
 
-def kapinin_ruh halini_olc():
+def kapinin_ruh_halini_olc():
     return random.choice([
         "hafif gıcırdıyor",
         "tam oturdu",
@@ -33,7 +33,7 @@ def kapinin_ruh halini_olc():
     ])
 
 
-def isik_sondü_mu(deney_no: int) -> bool:
+def isik_sondu_mu(deney_no: int) -> bool:
     """Bilimsel olarak %51 özgüvenle tahmin eder."""
     print(f"\n[Deney {deney_no}] Kapı kapanıyor...")
     time.sleep(0.4)
@@ -63,7 +63,7 @@ def main():
     deney_sayisi = 5
     yanan = 0
     for i in range(1, deney_sayisi + 1):
-        if isik_sondü_mu(i):
+        if isik_sondu_mu(i):
             print("  Sonuç: IŞIK SÖNDÜ. (iddia)")
         else:
             print("  Sonuç: IŞIK HÂLÂ YANIYOR. Komplo derin.")
